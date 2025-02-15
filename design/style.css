@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Header */
+header {
+    background: #333;
+    padding: 1rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon, .frame-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Profile gua */
+.profile {
+    background: #FFB84C;
+    height: 300px;
+    position: relative;
+}
+
+/* gambar profile  */
+.profile-gambar {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.profile-gambar-isi {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* About */
+.about-full {
+    margin-top: 55px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.about {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Geneva;
+}
+
+.about-isi {
+    font-size: 125%;
+    margin-top: 1%;
+    font-family: Geneva;
+}
+
+.whatsapp {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
+    height: 5rem;
+    font-size: 150%;
+    font-family: Geneva;
+}
+
+/* Social media */
+.social-full {
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-media {
+    font-size: 4rem;
+    font-family: Verdana;
+}
+
+.social-isi {
+    font-size: 130%;
+    height: 5rem;
+    font-family: Geneva;
+    margin-top: 1%;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-card {
+    border: 3px solid #0f0707;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tt {
+    width: 10rem;
+    height: 10rem;
+}
+
+.ig {
+    width: 10rem;
+    height: 10rem;
+}
+.yt {
+    width: 17rem;
+    height: 10rem;
+}
+
+.nama {
+    margin-top: 1rem;
+    font-family: Verdana;
+}
+
+.tombol {
+    background-color: #4e4d4b;
+    border-radius: 15px;
+    border: none;
+    padding: 1rem 3rem;
+    color: #ffffff;
+    font-size: 1rem;
+    height: 3rem;
+    width: 10rem;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+/* Build Section */
+.build-section {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
+.build-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.build-content h2 {
+    text-align: right;
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-left: 17%;
+    font-family: Verdana;
+}
+
+.video {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    margin-right: 17%;
+}
+
+.akhir {
+    font-size: 140%;
+    font-family: Geneva;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer-je {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.1rem 0;
+}
+
+.support {
+    font-size: 20px;
+    margin-right: 37%;
+    font-family: Verdana;
+}
+
+.wm {
+    font-size: 20px;
+    margin-top: 1%;
+    font-family: Verdana;
+}
+
+.pembuat {
+    font-size: 20px;
+    margin-left: 37%;
+    font-family: Verdana;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        background-size: 40% auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem;
+        background-image: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
